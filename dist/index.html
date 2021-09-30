@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Видеосервис">
+    
+    <title>Видеосервис</title>
+</head>
+<body>  <!-- class"no-scroll" -->
+    <div class="page">
+
+        <header class="header">
+            <a class="header__logo" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <div class="header-logo-block">
+                    <img src="assets/images/sign.svg" alt="logo">
+                </div>
+                <div class="header-logo-block">
+                    <h1>Видеосервис</h1>
+                </div>
+            </a>
+            <div class="header__search">
+                <form method="get" class="search" action="search.html">
+                    <input  class="search__input" type="text" placeholder="Поиск...">
+                    <button class="search__button">Найти</button>
+                </form>
+            </div>  
+            <div class="header__login btn">
+                <button type="button" class="btn"  data-modal="auth-modal">Войти</button>
+            </div>
+        </header>
+        
+        <main class="main">
+            <div class="container">
+                <div class="page__title">
+                    <button class="page__title-button page__title-button--focus">Фильмы</button>
+                    <button class="page__title-button">Телеканалы</button>
+                </div>
+                <div class="block-title">
+                    <h2>🔥 Новинки</h2>
+                </div>
+                <div class="cards">
+                    <div class="cards__item">
+                        <img class="cards__previev"
+                         src="assets/images/preview1.png" alt="newsImage1">
+                        <div class="cards__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dicta vitae dolores optio et neque ullam consequuntur tempore aliquam itaque dolorem, provident sint officiis. Minus quidem voluptatum aliquid sint maxime.</div>
+                        <p class="cards__title">Мульт в кино. Выпуск №103. Некогда грустить!</p>
+                    </div>
+                    <div class="cards__item" >
+                        <img class="cards__previev"
+                         src="assets/images/preview2.png" alt="newsImage2">
+                        <div class="cards__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, labore eaque quos vero quidem molestiae exercitationem. Dignissimos cum similique sed, officiis nam velit laudantium quisquam libero, facilis cupiditate dicta veniam?</div>
+                        <p class="cards__title">Новый Бэтмен</p>
+                    </div>
+                    <div class="cards__item">
+                        <img class="cards__previev"
+                         src="assets/images/preview3.png" alt="newsImage3">
+                        <div class="cards__text">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.</div>
+                        <p class="cards__title">Однажды... в Голливуде</p>
+                    </div>
+                    <div class="cards__item" data-modal="story-modal">
+                        <img class="cards__previev"
+                         src="assets/images/preview4.png" alt="newsImage4">
+                        <div class="cards__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt dolore voluptas non reiciendis amet architecto excepturi, reprehenderit, assumenda eius velit veritatis aliquid alias tenetur consequatur saepe! Quibusdam praesentium vitae totam!</div>
+                        <p class="cards__title">Стриптизёрши</p>
+                    </div>
+                </div>
+                <div class="block-title">
+                    <h2>Жанры</h2>
+                </div>
+                <div class="cards cards--genres">
+                    <a class="cards__item cards__item--genres cards__item--genres-elem1">
+                        <div class="cards__emoji">😁</div>
+                        <p>Комедия</p>
+                    </a>
+                    <a class="cards__item cards__item--genres cards__item--genres-elem2">
+                        <div class="cards__emoji">😭</div>
+                        <p>Драмы</p>
+                    </a>
+                    <a class="cards__item cards__item--genres cards__item--genres-elem3">
+                        <div class="cards__emoji">👽</div>
+                        <p>Фантастика</p>
+                    </a>
+                    <a class="cards__item cards__item--genres cards__item--genres-elem4">
+                        <div class="cards__emoji">👻</div>
+                        <p>Ужасы</p>
+                    </a>
+                </div>
+                
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__logo">
+                    <img src="assets/images/footer-logo.svg" alt="">
+                </div>
+                <div class="footer__text">
+                    <p>426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса, 246 (ДК «Металлург»)</p>
+                    <p>+7 (3412) 93-88-61, 43-29-29</p>
+                    <a href="#">htc-cs.ru</a>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+
+    <div class="modal" id="auth-modal">
+        <div class="modal__content modal__content--auth">
+            <button class="modal__close" type="button">
+                <img src="assets/images/x.svg" alt="Close">
+            </button>
+    
+            <form action="/" method="POST" class="form">
+                <h2 class="form__title">Вход</h2>
+                <div class="form__group">
+                    <input type="text" class="form__control" placeholder="Логин">
+                    <span class="form__line"></span>
+                </div>
+            
+                <div class="form__group">
+                    <input type="password" class="form__control" placeholder="Пароль">
+                    <span class="form__line"></span>
+                </div>
+                <div class="form__group">
+                    <input class="form__checkbox" type="checkbox" id="remember" name="remember">
+                    <label class="form__checkbox--label" for="remember">Запомнить</label>
+                </div>
+                <p>Нет учетной записи?</p>  
+                <a href="#">
+                     Зарегистрироваться</a>
+                <div class="form__footer form__footer--center">
+                    <div class="form__group">
+                        <button type="submit" class="btn">Войти</button>
+                    </div>
+                </div>
+            </form>
+            
+            
+            
+        </div> <!--modal__contetn-->
+    </div><!--modal-->    
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
